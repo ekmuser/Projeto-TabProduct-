@@ -7,19 +7,22 @@
     padding: 0;
 }
 
-body, html {
+body,
+html {
     background-color: #000;
     color: #fff
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
     color: unset;
     text-decoration: none;
 }
 
 header {
     background: linear-gradient(180deg, #102347 0%, #181818 100%);
-    height: 220px; 
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +49,7 @@ header {
 }
 
 .tabproduct-card {
-    background-color: #283142; 
+    background-color: #283142;
     border-radius: 10px;
     padding: 30px 10px;
 }
@@ -54,7 +57,7 @@ header {
 .tabproduct-container {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 #sales {
@@ -67,7 +70,7 @@ header {
     margin-bottom: 20px;
 }
 
-.tabproduct-form-control-container{
+.tabproduct-form-control-container {
     margin-bottom: 16px;
     max-width: 300px;
 }
@@ -78,7 +81,61 @@ header {
     background-color: #1B2531;
     border: 1px solid #384459;
     border-radius: 5px;
-    color:  #9AAABE; 
+    color: #9AAABE;
     padding: 0 20px;
     font-size: 18px;
+}
+
+.tabproduct-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tabproduct-sales-table thead {
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    width: 700;
+}
+
+.tabproduct-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+}
+
+.tabproduct-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5f6e82
+}
+
+.tabproduct-sales-table tbody tr:hover>th {
+    background-color: #384459;
+
+}
+
+.tabproduct-sales-table tbody tr:nth-child(odd) {
+    background-color: #242c3b;
+}
+
+.tabproduct-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tabproduct-red-btn {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tabproduct-red-btn img {
+    width: 19px;
 }
