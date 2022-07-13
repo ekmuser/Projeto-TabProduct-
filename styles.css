@@ -103,6 +103,7 @@ header {
     font-size: 14px;
     font-weight: 400;
     color: #CFCFCF;
+    text-align: center;
 }
 
 .tabproduct-sales-table tbody tr {
@@ -138,4 +139,36 @@ header {
 
 .tabproduct-red-btn img {
     width: 19px;
+}
+
+.show576 {
+    display: none; 
+}
+
+.show992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show576 {
+        display: table-cell; 
+    }
+
+    .tabproduct-card {
+        padding: 35px;
+    }
+
+    .tabproduct-sales-table tbody tr {
+        height: 55px;
+    }
+
+    .tabproduct-sales-table tbody {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .show992 {
+        display: table-cell; 
+    }
 }
